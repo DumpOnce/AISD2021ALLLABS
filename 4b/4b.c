@@ -712,16 +712,6 @@ int algo(Table* table)
 
 
 
-int height(Tree* tree)
-{
-	if (!tree)
-		return -1;
-	int hr = height(tree->right);
-	int hl = height(tree->left);
-	return ((hl > hr ? hl : hr) + 1);
-}
-
-
 int insert(Table* table)
 {
 	table->tree = funct(table);
